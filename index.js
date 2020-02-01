@@ -4,6 +4,7 @@ const mapToNegativize = function(arr) {
             newArray.push(el * -1)
         }
     return newArray
+    // return arr.map(el => el * -1)
 }
 
 const mapToNoChange = function(arr) {
@@ -16,6 +17,7 @@ const mapToDouble = function(arr) {
             newArray.push(el * 2)
         }
     return newArray
+    // return arr.map(el => el * 2)
 }
 
 const mapToSquare = function(arr) {
@@ -24,6 +26,7 @@ const mapToSquare = function(arr) {
             newArray.push(el ** 2)
         }
     return newArray
+    // return arr.map(el => el ** 2)
 }
 
 const reduceToTotal = function(arr, startingPoint = 0) {
@@ -32,6 +35,7 @@ const reduceToTotal = function(arr, startingPoint = 0) {
         total += el
     }
     return total
+    // return arr.reduce(function(total, el) { return el + total})
 }
 
 const reduceToAllTrue = function(arr) {
@@ -42,6 +46,7 @@ const reduceToAllTrue = function(arr) {
     }
     return true
     // return value
+    // return arr.every(el => !!el)
 }
 
 const reduceToAnyTrue = function(arr) {
@@ -49,4 +54,5 @@ const reduceToAnyTrue = function(arr) {
         if (!!el) { return true }
     }
     return false
+    // return arr.some(el => !!el)
 }
