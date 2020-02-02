@@ -36,7 +36,6 @@ function reduceToTotal (sourceArray, startingPoint=0){
   sourceArray.forEach(function (el){
     total +=el;
   });
-  // return (startingPoint > 0)? total + startingPoint : total;
   return total
 }
 
