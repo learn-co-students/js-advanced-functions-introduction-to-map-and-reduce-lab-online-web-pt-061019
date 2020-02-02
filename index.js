@@ -1,18 +1,22 @@
 // Your code here
 const mapToNegativize = function(arr){
-  const resultArray = [];
+  let resultArray = [];
   for (const el of arr){
     resultArray.push(el * -1);
   }
   return resultArray;
 }
 
-const mapToNoChange = function(arr){
-  return arr;
+const mapToNoChange = function(src){
+  let r = []
+  for (let i = 0; i < src.length; i++ ) {
+    r.push(src[i]) // Unique work
+  }
+  return r
 }
 
 const mapToDouble = function(arr){
-  const resultArray = [];
+  let resultArray = [];
   for (const el of arr){
     resultArray.push(el *2);
   }
@@ -20,9 +24,9 @@ const mapToDouble = function(arr){
 }
 
 const mapToSquare = function(arr){
-  const resultArray = [];
+  let resultArray = [];
   for (const el of arr){
-    resultArray.push(el* el);
+    resultArray.push(el * el);
   }
   return resultArray;
 }
