@@ -42,20 +42,14 @@ function reduceToTotal (sourceArray, startingPoint=0){
 
 function reduceToAllTrue(arr){
   for (const val of arr){
-    if (val) {
-      
-    } else {
-        return false;
-    }
+    if (!val) return false
   }
   return true;
 }
 
 function reduceToAnyTrue (arr){
   for (const val of arr){
-    if (val) {
-      return true;
-    } 
+    if (val) return true;
   }
   return false
 }
