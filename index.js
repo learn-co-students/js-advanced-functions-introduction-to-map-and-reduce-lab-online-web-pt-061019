@@ -39,7 +39,7 @@ function reduceToTotal (sourceArray, startingPoint){
   return (startingPoint > 0)? total + startingPoint : total;
 }
 
-function  reduceToAllTrue(arr){
+function reduceToAllTrue(arr){
   for (const val of arr){
     if (val) {
       
