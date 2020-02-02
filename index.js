@@ -31,12 +31,13 @@ function mapToSquare(arr){
   return resultArray;
 }
 
-function reduceToTotal (sourceArray, startingPoint){
-  let total = 0;
+function reduceToTotal (sourceArray, startingPoint=0){
+  let total = startingPoint;
   sourceArray.forEach(function (el){
     total +=el;
   });
-  return (startingPoint > 0)? total + startingPoint : total;
+  // return (startingPoint > 0)? total + startingPoint : total;
+  return total
 }
 
 function reduceToAllTrue(arr){
