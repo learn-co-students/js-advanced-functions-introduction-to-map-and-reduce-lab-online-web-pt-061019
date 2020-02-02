@@ -1,5 +1,5 @@
 // Your code here
-const mapToNegativize = function(arr){
+function mapToNegativize (arr){
   let resultArray = [];
   for (const el of arr){
     resultArray.push(el * -1);
