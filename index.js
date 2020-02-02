@@ -7,7 +7,7 @@ function mapToNegativize (arr){
   return resultArray;
 }
 
-const mapToNoChange = function(src){
+function mapToNoChange(src){
   let r = []
   for (let i = 0; i < src.length; i++ ) {
     r.push(src[i]) // Unique work
@@ -15,7 +15,7 @@ const mapToNoChange = function(src){
   return r
 }
 
-const mapToDouble = function(arr){
+function mapToDouble(arr){
   let resultArray = [];
   for (const el of arr){
     resultArray.push(el *2);
@@ -23,7 +23,7 @@ const mapToDouble = function(arr){
   return resultArray;
 }
 
-const mapToSquare = function(arr){
+function mapToSquare(arr){
   let resultArray = [];
   for (const el of arr){
     resultArray.push(el * el);
@@ -31,7 +31,7 @@ const mapToSquare = function(arr){
   return resultArray;
 }
 
-const reduceToTotal = function(sourceArray, startingPoint){
+function reduceToTotal (sourceArray, startingPoint){
   let total = 0;
   sourceArray.forEach(function (el){
     total +=el;
@@ -39,7 +39,7 @@ const reduceToTotal = function(sourceArray, startingPoint){
   return (startingPoint > 0)? total + startingPoint : total;
 }
 
-const reduceToAllTrue = function(arr){
+function  reduceToAllTrue(arr){
   for (const val of arr){
     if (val) {
       
@@ -50,7 +50,7 @@ const reduceToAllTrue = function(arr){
   return true;
 }
 
-reduceToAnyTrue = function(arr){
+function reduceToAnyTrue (arr){
   for (const val of arr){
     if (val) {
       return true;
