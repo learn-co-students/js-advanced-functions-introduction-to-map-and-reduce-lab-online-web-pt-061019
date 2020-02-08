@@ -1,34 +1,34 @@
 // Your code here
 function mapToNegativize(array) {
-    const new_array = []
+    const newArray = []
     for (let i = 0; i < array.length; i++) {
-        new_array.push(array[i] * -1)
+        newArray.push(array[i] * -1)
     }
-    return new_array
+    return newArray
 }
 
 function mapToNoChange(array) {
-    const new_array = []
+    const newArray = []
     for (let i = 0; i < array.length; i++) {
-        new_array.push(array[i])
+        newArray.push(array[i])
     }
-    return new_array
+    return newArray
 }
 
 function mapToDouble(array) {
-    const new_array = []
+    const newArray = []
     for (let i = 0; i < array.length; i++) {
-        new_array.push(array[i] * 2)
+        newArray.push(array[i] * 2)
     }
-    return new_array
+    return newArray
 }
 
 function mapToSquare(array) {
-    const new_array = []
+    const newArray = []
     for (let i = 0; i < array.length; i++) {
-        new_array.push(array[i] * array[i])
+        newArray.push(array[i] * array[i])
     }
-    return new_array
+    return newArray
 }
 
 function reduceToTotal(array, index=0) {
